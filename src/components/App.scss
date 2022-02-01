@@ -1,0 +1,189 @@
+.LawpathSearch {
+    margin: -50px auto;
+
+    &__results {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &__answers {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        box-shadow: 0px 3px 6px #00000029;
+    }
+
+    &__answerHeader {
+        img {
+            width: 30px;
+        }
+
+        strong {
+            display: inline-block;
+            font-size: 18px;
+            margin-left: 10px;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .LawpathSearchBox {
+        background: #fff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 3px;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        &__searchInput {
+            border: 1px solid #ced4da;
+            width: 95%;
+
+            &:focus {
+                border: 1px solid #0075BF;
+                outline-color: #0075BF;
+            }
+        }
+    }
+
+    .LawpathAnswer {
+        // background: #FFF6E4 0% 0% no-repeat padding-box;
+        background: #fff 0% 0% no-repeat padding-box;
+
+        &__wrapper {
+            padding: 15px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+
+        &__text {
+            em {
+                padding: 3px 1px;
+                color: #000;
+                font-weight: bold;
+            }
+
+            font-style: italic;
+            font-size: 18px;
+        }
+    }
+
+    .LawpathSearchResult {
+        background: #fff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 3px;
+        width: 100%;
+        margin-bottom: 28px;
+
+        &__title {
+            margin: 0px 0px 15px 20px;
+            padding: 10px 0px 0px 0px;
+            font-size: 20px;
+        }
+
+        &__category {
+            margin: 0px 0px 0px 20px;
+            padding: 10px 0px 0px 0px;
+        }
+
+        &__categoryIcon {
+            display: table-cell;
+
+            img {
+                width: 15px;
+            }
+        }
+
+        &__categoryText {
+            display: table-cell;
+            font-size: 16px;
+            color: #7A8AA0;
+            font-weight: bold;
+            position: relative;
+            top: 2px;
+            padding-left: 10px;
+        }
+
+        &__relevance {
+            margin: 0px 20px 0px 20px;
+            color: #7A8AA0;
+
+            small {
+                position: relative;
+                top: -4px;
+                margin-right: 5px;
+            }
+        }
+
+        &__excerpt {
+            margin: 0px 20px 0px 20px;
+            padding: 0px 0px 10px 0px;
+            font-size: 16px;
+            color: #333;
+
+            em {
+                background: #e7f2f9;
+                padding: 3px 1px;
+                color: #000;
+                font-style: normal;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .LawpathSearchLoading {
+        width: 200px;
+        margin: 200px auto;
+    }
+
+    .LawpathSearchDefault {
+        text-align: center;
+        margin: 0px auto;
+
+        h2 {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+    }
+
+    .LawpathSearchOptions {
+        list-style-type: none;
+        padding: 0px;
+        position: relative;
+        top: 31px;
+
+        li {
+            height: 50px;
+            margin: 0px 10px;
+            padding: 10px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 44px;
+            border-bottom: 5px solid transparent;
+            display: inline-block;
+            text-align: center;
+            background-clip: padding-box;
+        }
+
+        &__selected {
+            border-bottom: 5px solid #0075BF !important;
+        }
+
+        li:hover {
+            border-bottom: 5px solid #0075BF;
+        }
+    }
+
+    @media (max-width: 70em) {
+        .LawpathSearchOptions {
+            top: 18px;
+            left: 40px;
+        }
+
+        .LawpathSearchLoading {
+            width: 200px;
+            margin: 50px auto;
+        }
+    }
+}
